@@ -16,7 +16,7 @@ import java.time.LocalDate;
 public class Student {
     @SequenceGenerator(
             name = "student_sequence",
-            sequenceName="student_sequence",
+            sequenceName = "student_sequence",
             allocationSize = 1
     )
     @GeneratedValue(
@@ -30,10 +30,4 @@ public class Student {
     private LocalDate dob;
     private int age;
 
-    public Student(String name, String email, LocalDate dob, int age) {
-        this.name = name;
-        this.email = email;
-        this.dob = dob;
-        this.age = age;
-    }
 }
